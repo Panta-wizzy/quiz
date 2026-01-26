@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>C++ Quiz</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  .question {
+    margin-bottom: 20px;
+    background: blue;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+  }
+  .answers {
+    margin-left: 20px;
+  }
+  .correct {
+    color: green;
+  }
+  .incorrect {
+    color: red;
+  }
+  #result {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  button{
+    border: none;
+    border-radius: 9px;
+    padding: 10px;
+    background: green;
+    color: white;
+    font-weight: bold;
+  }
+
+  footer{
+    background: linear-gradient(225deg, blue, green);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  footer h2{
+    padding: 25px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+  footer p{
+    padding-top: 90px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  span{
+    color:  red;
+  }
+</style>
+</head>
+<body>
+
+<h1>C++ Quiz</h1>
+
+<form id="quizForm">
+  <div class="question" id="question1">
+    <p>1. What is the correct way to declare an integer variable in C++?</p>
+    <div class="answers">
+      <label><input type="radio" name="q1" value="a"> int x;</label><br>
+      <label><input type="radio" name="q1" value="b"> variable int x;</label><br>
+      <label><input type="radio" name="q1" value="c"> declare x as int;</label>
+    </div>
+  </div>
+
+  <div class="question" id="question2">
+    <p>2. Which symbol is used for the scope resolution in C++?</p>
+    <div class="answers">
+      <label><input type="radio" name="q2" value="a"> ::</label><br>
+      <label><input type="radio" name="q2" value="b"> }}</label><br>
+      <label><input type="radio" name="q2" value="c"> ;</label>
+    </div>
+  </div>
+  
+  <div class="question" id="question3">
+    <p>3. What will happen if you forget ";" in c++ programme?</p>
+    <div class="answers">
+      <label><input type="radio" name="q3" value="a"> nothing will happen</label><br>
+      <label><input type="radio" name="q3" value="b"> error will occure</label><br>
+      <label><input type="radio" name="q3" value="c"> the prgramme will be executed as normal</label>
+    </div>
+  </div>
+  <div class="question" id="question4">
+    <p>4. Which of the following is the correct in declaring indertifier in C++?</p>
+    <div class="answers">
+      <label><input type="radio" name="q4" value="a"> $var-name</label><br>
+      <label><input type="radio" name="q4" value="b"> Var_123</label><br>
+      <label><input type="radio" name="q4" value="c"> @varname</label>
+    </div>
+  </div>
+
+  <div class="question" id="question5">
+    <p>5. which is the correct syntax for declaring the array in C++?</p>
+    <div class="answers">
+      <label><input type="radio" name="q5" value="a"> int array[value]</label><br>
+      <label><input type="radio" name="q5" value="b"> int array(value);</label><br>
+      <label><input type="radio" name="q5" value="c"> int array[value];</label>
+    </div>
+  </div>
+
+  <div class="question" id="question6">
+    <p>6. which of the following is the correct syntax to display the output in c++ programme?</p>
+    <div class="answers">
+      <label><input type="radio" name="q6" value="a"> cout << "hello world"; </label><br>
+      <label><input type="radio" name="q6" value="b"> cout >> 'hello world';</label><br>
+      <label><input type="radio" name="q6" value="c"> cin<<'hello world';</label>
+    </div>
+  </div>
+
+  <div class="question" id="question7">
+    <p>7. what is the output of this program? <br>
+    #include <iostream></iostream> <br>
+    using namespace std; <br>
+    int main(){ <br>
+        int array[] = {10, 20, 30, 40, 50}; <br>
+        cout << array[2]; <br>
+        return 0; <br>
+    }
+</p>
+    <div class="answers">
+      <label><input type="radio" name="q7" value="a"> 30</label><br>
+      <label><input type="radio" name="q7" value="b"> 10</label><br>
+      <label><input type="radio" name="q7" value="c"> 40</label>
+    </div>
+  </div>
+
+  <div class="question" id="question8">
+    <p>8. which operation is used as logical 'OR'</p>
+    <div class="answers">
+        <label><input type="radio" name="q8" value="a">operator - ||</label> <br>
+        <label><input type="radio" name="q8" value="b">operator - &&</label> <br>
+        <label><input type="radio" name="q8" value="c">operator - &</label>
+    </div>
+  </div>
+
+  <div class="question" id="question9">
+    <p>9. which of the following is used for comments in c++?</p>
+    <div class="answers">
+        <label><input type="radio" name="q9" value="a">// comment</label> <br>
+        <label><input type="radio" name="q9" value="b">/* comment */</label> <br>
+        <label><input type="radio" name="q9" value="c">both of the above</label>
+    </div>
+  </div>
+
+  <div class="question" id="question10">
+    <p>10. A c++ programe has line, so what are used to end the line in c++</p>
+    <div class="answers">
+        <label><input type="radio" name="q10" value="a">semicolon (;)</label> <br>
+        <label><input type="radio" name="q10" value="b">dot (.)</label> <br>
+        <label><input type="radio" name="q10" value="c">comma (,)</label>
+    </div>
+  </div>
+
+  <button type="button" onclick="checkAnswers()">Submit Answers</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+  const answers = {
+    q1: 'a', // correct answer for question 1
+    q2: 'a', // correct answer for question 2
+    q3: 'b', //coreect answer for question 3
+    q4: 'b', //correct answer for question 4
+    q5: 'c', //correct answer for question 5
+    q6: 'a', //correct answer for question 6
+    q7: 'a', //coerrect answer for question 7
+    q8: 'a', //correct answer for question 8
+    q9: 'c', //correct answer for question 9
+    q10: 'a' //correct answer for question 10
+  };
+
+  function checkAnswers() {
+    let score = 0;
+    let total = Object.keys(answers).length;
+    let resultText = '';
+
+    for (const question in answers) {
+      const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+      const correctAnswer = answers[question];
+
+      if (selectedOption) {
+        if (selectedOption.value === correctAnswer) {
+          score++;
+          resultText += `<p class="${question} correct">Question ${question.slice(-1)}: Correct</p>`;
+        } else {
+          resultText += `<p class="${question} incorrect">Question ${question.slice(-1)}: Incorrect</p>`;
+        }
+      } else {
+        resultText += `<p class="${question} incorrect">Question ${question.slice(-1)}: No answer selected</p>`;
+      }
+    }
+
+    document.getElementById('result').innerHTML = `
+      <p>Your score: ${score} out of ${total}</p>
+      ${resultText}
+    `;
+  }
+</script>
+
+<footer>
+    <h2>C++ QUIZ</h2>
+    <p>c++ quiz: created by <span>Panta-wizzy</span> </p> 
+    <a href="tel: 255 793085794" alt="contact_me"><button>Contact</button></a>
+</footer>
+
+</body>
+</html>
