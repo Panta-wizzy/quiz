@@ -190,6 +190,7 @@ return 0; <br>
 </form>
 
 <div id="result"></div>
+<div id="results"></div>
 
 <script>
   const answers = {
@@ -217,12 +218,12 @@ return 0; <br>
       if (selectedOption) {
         if (selectedOption.value === correctAnswer) {
           score++;
-          resultText += `<p class="${question} correct">Question ${question.slice(-1)}: Correct</p>`;
+          resultText += `<p class="${question} correct">Question ${question.slice(1)}: Correct</p>`;
         } else {
-          resultText += `<p class="${question} incorrect">Question ${question.slice(-1)}: Incorrect</p>`;
+          resultText += `<p class="${question} incorrect">Question ${question.slice(1)}: Incorrect</p>`;
         }
       } else {
-        resultText += `<p class="${question} incorrect">Question ${question.slice(-1)}: No answer selected</p>`;
+        resultText += `<p class="${question} incorrect">Question ${question.slice(1)}: No answer selected</p>`;
       }
     }
 
@@ -231,6 +232,9 @@ return 0; <br>
       ${resultText}
     `;
   }
+
+
+
 </script>
 
 <footer>
